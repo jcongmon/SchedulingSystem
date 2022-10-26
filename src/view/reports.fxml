@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="640.0" prefWidth="1000.0">
+            <children>
+                <Label text="Reports">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="1000.0">
+                    <children>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="200.0" text="Appointments">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets top="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="firstChoiceBox" prefHeight="26.0" prefWidth="175.0">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </ChoiceBox>
+                  <ChoiceBox fx:id="secondChoiceBox" layoutX="210.0" layoutY="10.0" prefHeight="26.0" prefWidth="175.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></ChoiceBox>
+                        <Label fx:id="countLbl">
+                            <HBox.margin>
+                                <Insets left="10.0" top="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="30.0" />
+                    </VBox.margin>
+                </HBox>
+                <TableView fx:id="appTableView" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="940.0">
+                    <columns>
+                        <TableColumn fx:id="appIdCol" prefWidth="50.0" text="ID" />
+                        <TableColumn fx:id="appTitleCol" prefWidth="100.0" text="Title" />
+                        <TableColumn fx:id="appClientIdCol" text="Client ID" />
+                        <TableColumn fx:id="appContactIdCol" text="Contact ID" />
+                        <TableColumn fx:id="appDescriptionCol" prefWidth="120.0" text="Description" />
+                        <TableColumn fx:id="appLocationCol" prefWidth="120.0" text="Location" />
+                        <TableColumn fx:id="appTypeCol" prefWidth="90.0" text="Type" />
+                        <TableColumn fx:id="appStartCol" prefWidth="150.0" text="Start" />
+                        <TableColumn fx:id="appEndCol" prefWidth="150.0" text="End" />
+                    </columns>
+                    <VBox.margin>
+                        <Insets left="30.0" />
+                    </VBox.margin>
+                </TableView>
+                <HBox layoutX="10.0" layoutY="521.0" maxWidth="-Infinity" prefHeight="25.0" prefWidth="1000.0" spacing="10.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#onActionBack" text="Back">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="924.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </HBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="570.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="loginIdLbl" alignment="TOP_LEFT" text="Current user:">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="currentUserLbl" text="User">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="580.0">
+                            <children>
+                                <Label fx:id="zoneIdLbl" prefWidth="251.0" text="ZoneID: America/Los_Angeles">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="errorLbl" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="11.0" prefWidth="303.0" textFill="#fc0000">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

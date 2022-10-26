@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyClientController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Label fx:id="modifyClientLbl" text="Modify Client">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="600.0">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label fx:id="nameLbl" alignment="CENTER_RIGHT" text="Name:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="nameTxt" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="70.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="61.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="addressLbl" alignment="CENTER_RIGHT" text="Address:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="addressTxt" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="57.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="91.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="countryLbl" alignment="CENTER_RIGHT" text="Country:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="countryChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="60.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="121.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="stateLbl" alignment="CENTER_RIGHT" text="State:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="stateChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="75.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="91.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="postalLbl" alignment="CENTER_RIGHT" text="Postal Code:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="postalTxt" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="34.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="121.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="phoneLbl" alignment="CENTER_RIGHT" text="Phone Number:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="phoneTxt" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="17.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="211.0" prefHeight="30.0" prefWidth="600.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="saveBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onActionSave" prefHeight="26.0" prefWidth="60.0" text="Save">
+                            <HBox.margin>
+                                <Insets left="178.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="cancelBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onActionCancel" prefHeight="26.0" prefWidth="60.0" text="Cancel" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="570.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="loginIdLbl" alignment="TOP_LEFT" text="Current user:">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="currentUserLbl" text="User">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="580.0">
+                            <children>
+                                <Label fx:id="zoneIdLbl" prefWidth="251.0" text="ZoneID: America/Los_Angeles">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="errorLbl" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="11.0" prefWidth="303.0" textFill="#fc0000">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" top="40.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
