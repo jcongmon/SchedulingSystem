@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Label fx:id="headerLbl" text="Scheduling System Login">
+                    <font>
+                        <Font name="Arial Bold" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="userLbl" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="102.0" text="User:" translateX="-6.0">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                        </Label>
+                        <TextField fx:id="userTxt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="160.0" translateX="-35.0">
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="50.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="passwordLbl" alignment="CENTER_RIGHT" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="83.0" text="Password:" translateX="-11.0">
+                            <HBox.margin>
+                                <Insets top="5.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="passwordTxt" prefHeight="26.0" prefWidth="160.0" translateX="-11.0">
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                </HBox>
+                <HBox layoutX="170.0" layoutY="156.0" prefHeight="30.0" prefWidth="600.0" spacing="10.0">
+                    <padding>
+                        <Insets left="247.0" top="10.0" />
+                    </padding>
+                    <children>
+                        <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="25.0" prefWidth="100.0" text="Login">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="exitBtn" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#onActionExit" prefHeight="25.0" prefWidth="100.0" text="Exit">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" />
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="570.0">
+                    <children>
+                        <Label fx:id="loginLbl" text="Logged Out">
+                            <font>
+                                <Font name="Arial Bold" size="10.0" />
+                            </font>
+                        </Label>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="580.0">
+                            <children>
+                                <Label fx:id="zoneIdLbl" prefWidth="251.0" text="ZoneID: America/Los_Angeles">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="errorLbl" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="11.0" prefWidth="303.0" textFill="#fc0000">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="20.0" top="45.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

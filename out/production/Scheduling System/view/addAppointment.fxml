@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointmentController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0">
+            <children>
+                <Label prefHeight="21.0" prefWidth="350.0" text="Add Appointment">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="30.0" prefWidth="600.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label alignment="CENTER_RIGHT" text="Client ID:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="clientIdTxt" editable="false" opacity="0.6" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="65.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="61.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" text="Title:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="titleTxt" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="90.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="91.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" text="Description:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="descriptionTxt" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="49.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="121.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" text="Location:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="countryChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="65.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="stateChoiceBox" layoutX="178.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="91.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" text="Contact ID:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="contactIdChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="52.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="121.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" text="Type:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="typeChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="84.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="301.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" text="Start Time:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="startTimeDatePicker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="52.0" />
+                            </HBox.margin>
+                        </DatePicker>
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="10.0" text="HH:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="startHoursChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                        <Label alignment="CENTER_RIGHT" layoutX="274.0" layoutY="10.0" text="MM:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="startMinutesChoiceBox" layoutX="338.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                        <Label alignment="CENTER_RIGHT" layoutX="386.0" layoutY="10.0" text="SS:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="startSecondsChoiceBox" layoutX="450.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="406.0" prefHeight="30.0" prefWidth="600.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" text="End Time:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="endTimeDatePicker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets left="56.0" />
+                            </HBox.margin>
+                        </DatePicker>
+                        <Label alignment="CENTER_RIGHT" text="HH:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="endHoursChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                        <Label alignment="CENTER_RIGHT" text="MM:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="endMinutesChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                        <Label alignment="CENTER_RIGHT" text="SS:">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" top="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="endSecondsChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="48.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="211.0" prefHeight="30.0" prefWidth="600.0" spacing="10.0">
+                    <children>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onActionSave" prefHeight="26.0" prefWidth="60.0" text="Save">
+                            <HBox.margin>
+                                <Insets left="185.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onActionCancel" prefHeight="26.0" prefWidth="60.0" text="Cancel" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="570.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="loginIdLbl" alignment="TOP_LEFT" text="Current user:">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="currentUserLbl" text="User">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="580.0">
+                            <children>
+                                <Label fx:id="zoneIdLbl" prefWidth="251.0" text="ZoneID: America/Los_Angeles">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="errorLbl" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="11.0" prefWidth="303.0" textFill="#fc0000">
+                                    <font>
+                                        <Font name="Arial Bold" size="10.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
